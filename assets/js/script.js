@@ -1,4 +1,10 @@
 var currentTimeAndDateEl = $("#current-date-and-time");
+var addProjectButtonEl = $('#add-project-button');
+var projectEntryModalEl = $('#project-entry-modal');
+
+projectEntryModalEl.addEventListener('shown.bs.modal', function () {
+    addProjectButtonEl.focus()
+})
 
 var timerInterval = setInterval(function() {
     var timeAndDate = moment();
