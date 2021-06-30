@@ -10,13 +10,50 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
   ></script>
-    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <title>Project Tracker</title>
 </head>
 <body>
     <header>
         <h1> Current Time & Date</h1>
         <h1 id="current-date-and-time"></h1>
     </header>
+    <main>
+        <form>
+            <h3> Add a new project.</h3>
+            <p>
+                <label for="project-name">Project Name:</label>
+                <input id="project-name" type="text" placeholder="Enter the project's name" />
+            </p>
+            <p>
+            <label for="project-type">Project Type</label>
+            <select id="project-type" placeholder="Pick one...">
+                <option>Beginner</option>
+                <option >Intermediate</option>
+                <option>Advanced</option>
+            </select>
+            </p>
+            <p>
+                <label for="hourly-rate">Hourly Rate($)</label>
+                <input id="hourly-rate" type="text" placeholder="$" />
+            </p>
+            <p>
+                <label for="due-date">Due Date</label>
+                <input id="due-date" type="text" placeholder="When is the project due?" />
+            </p>
+            <button type="close" value="Close">
+                Close
+            </button>
+            <button type="submit" value="Submit Project info">
+                Submit Project info
+              </button>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
